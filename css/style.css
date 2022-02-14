@@ -11,6 +11,10 @@ main {
   padding: 0 1em;
 }
 
+p .messages {
+  opacity: 0.75;
+}
+
 article {
   display: flex;
   flex-wrap: wrap;
@@ -77,20 +81,21 @@ h3 {
   padding: 16px;
 }
 
-.success,
-.error,
-.warning {
+.success, .warning, .error {
   border: 1px solid #8C8C8C;
   padding: 16px;
   color: #FFFFFF;
 }
 
-.success {
+.success, .error, .warning {
   background-color: green;
 }
 
 .error {
   background-color: red;
+}
+.error::hover {
+  background-color: green;
 }
 
 .warning {

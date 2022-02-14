@@ -13,6 +13,12 @@ main {
     padding: 0 1em;
 }
 
+p{
+    .messages{
+        opacity: 0.75;
+    }
+}
+
 article {
     display: flex;
     flex-wrap: wrap;
@@ -80,12 +86,16 @@ h3 {
     padding: 16px;
 }
 
-.success,
-.error,
-.warning {
+.success{
     border: 1px solid $grey-light;
     padding: 16px;
     color: $white;
+}
+.error{
+    @extend .success;
+}
+.warning {
+    @extend .success;
 }
 
 .success {
@@ -94,6 +104,9 @@ h3 {
 
 .error {
     background-color: $red;
+    &::hover{
+        background-color: $green;
+    }
 }
 
 .warning {
