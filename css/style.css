@@ -99,7 +99,7 @@ footer h3 {
 .error {
   background-color: red;
 }
-.error::hover {
+.error:hover {
   background-color: green;
 }
 

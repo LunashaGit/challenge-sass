@@ -114,7 +114,7 @@ footer{
 
 .error {
     background-color: $red;
-    &::hover{
+    &:hover{
         background-color: $green;
     }
 }
