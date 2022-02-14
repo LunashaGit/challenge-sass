@@ -124,9 +124,9 @@ footer{
 }
 
 @for $i from 1 through 6{
-    .adv-#{$i}{
-        background-color: rgb(random(255), random(255), random(255));
-        color: rgb(random(255), random(255), random(255));
-        list-style-type: none;
+    li:nth-child(0n + #{$i}){
+        background-color: darken($white, $i * 5%);
+        color: lighten($black, $i * 5%);
+        
     }
-}
+} 
