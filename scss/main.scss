@@ -1,4 +1,11 @@
 @import '_color.scss';
+@import '_variable.scss';
+
+@mixin shadow {
+    -webkit-box-shadow: 10px 10px 15px -4px $grey-dark;
+    -moz-box-shadow: 10px 10px 15px -4px $grey-dark;
+    box-shadow: 10px 10px 15px -4px $grey-dark;
+}
 
 body {
     font: 100% "Space Mono", monospace;
@@ -23,12 +30,10 @@ article {
     display: flex;
     flex-wrap: wrap;
     section{
+        @include shadow;
         flex-grow: 1;
         flex-basis: 45%;
         border: 1px $grey-light solid;
-        -webkit-box-shadow: 10px 10px 15px -4px $grey-dark;
-        -moz-box-shadow: 10px 10px 15px -4px $grey-dark;
-        box-shadow: 10px 10px 15px -4px $grey-dark;
         padding: 16px;
         margin: 16px;
         clear: both;
