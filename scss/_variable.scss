@@ -1,0 +1,10 @@
+@mixin padding($padding){
+    @if $padding == 1{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }@else if $padding == 2{
+        padding: 16px * 2;
+    } @else if $padding == 3 {
+        padding: 16px;
+    }
+}
