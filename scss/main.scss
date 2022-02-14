@@ -122,3 +122,11 @@ footer{
 .warning {
     background-color: $orange;
 }
+
+@for $i from 1 through 6{
+    .adv-#{$i}{
+        background-color: rgb(random(255), random(255), random(255));
+        color: rgb(random(255), random(255), random(255));
+        list-style-type: none;
+    }
+}

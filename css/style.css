@@ -107,4 +107,40 @@ footer h3 {
   background-color: orange;
 }
 
+.adv-1 {
+  background-color: #203fa8;
+  color: #b8e74e;
+  list-style-type: none;
+}
+
+.adv-2 {
+  background-color: #0ca386;
+  color: #bd66f0;
+  list-style-type: none;
+}
+
+.adv-3 {
+  background-color: #19c4b6;
+  color: #abf0f4;
+  list-style-type: none;
+}
+
+.adv-4 {
+  background-color: #5b674e;
+  color: #0cffcd;
+  list-style-type: none;
+}
+
+.adv-5 {
+  background-color: #516004;
+  color: #a23a97;
+  list-style-type: none;
+}
+
+.adv-6 {
+  background-color: #4704db;
+  color: #6cdf88;
+  list-style-type: none;
+}
+
 /*# sourceMappingURL=style.css.map */
